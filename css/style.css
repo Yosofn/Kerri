@@ -1,0 +1,126 @@
+.home{
+
+    background-image: url('../images/header-bg.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.myHomeBtn:hover{
+    background-color: white !important;
+    color: black !important;
+}
+.homeMouse{
+    width: 30px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10rem;
+    position: relative;
+    animation-name: movedMouse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.homeMouse::after{
+    content: "";
+    width: 3px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+@keyframes movedMouse {
+    
+    0% { bottom: 0; }
+    10% { bottom: 60px; }
+    20% { bottom: 0; }
+    40% { bottom: 40px; }
+    60% { bottom: 0; }
+    80% { bottom: 20; }
+    100% { bottom: 0; }
+
+}
+.settings{
+    top: 25%;
+    cursor: pointer
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color:  #D55D73;
+}
+.animatedText::after{
+    content: "";
+    animation-name: animatedText;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animatedText {
+    
+    0%{ content: "D"; }
+    2%{ content: "De"; }
+    4%{ content: "Dev"; }
+    6%{ content: "Deve"; }
+    8%{ content: "Devel"; }
+    10%{ content: "Developer"; }
+
+
+}
+.line{
+    width: 20%;
+    background-color: red;
+    height: 2px;
+    margin: auto;
+    transition: 0.5s all;
+}
+.item:hover .line{
+    width: 30%;
+}
+.carousel-indicators [data-bs-target] {
+    border-radius: 15px;
+    height: 6px;
+    background-color: red;
+}
+.carousel-indicators{
+    bottom: unset;
+    top: 102%;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    width: 50px;    
+}
+.header span{
+    font-weight: bold;
+}
+.myTabs{
+    width: max-content;
+    margin: auto;
+}
+.nav-tabs{
+    border-bottom: unset;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background-color: red;
+    border-radius: 10rem;
+}
+.imageLayer{
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+.imgItem:hover .imageLayer{
+    opacity: 1;
+}
+.layerContent{
+    position: relative;
+    top: 100%;
+    transition: 0.2s all;
+}
+.imgItem:hover .layerContent{
+    top: 0;
+}
+
+
